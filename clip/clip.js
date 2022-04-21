@@ -13,7 +13,6 @@ export const clip = new HTMLClip({
     flex-direction:column;
     justify-content:center;
     align-items: center;
-    color: {{ initParams.color }};
   }
   `,
   host: document.getElementById("clip"),
@@ -21,15 +20,6 @@ export const clip = new HTMLClip({
     width: "1920px",
     height: "1080px",
   },
-  // initParamsValidationRules: {
-  //   color: {
-  //     label: "Text Color",
-  //     type: "color",
-  //     optional: true,
-  //     default: "white",
-  //   },
-  // },
-  // initParams: initParams[1].value,
 });
 const entities = [];
 for (let j = 0; j < 3; j++) {
@@ -57,7 +47,7 @@ for (let j = 0; j < 3; j++) {
       type: "MeshLambertMaterial",
       parameters: [
         {
-          color: "#fff",
+          color: "@initParams.ballColor",
         },
       ],
     },
@@ -75,7 +65,7 @@ const threeclip = new threejs.Clip(
       type: "WebGLRenderer",
       parameters: [{ powerPreference: "high-performance" }],
       settings: {
-        setClearColor: ["#f1f1f1"],
+        setClearColor: ["@initParams.backgroundColor"],
       },
     },
     scenes: {},
