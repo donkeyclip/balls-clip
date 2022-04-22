@@ -2,7 +2,7 @@ export default [
   {
     name: "Default",
     value: {
-      backgroundColor: "white",
+      backgroundColor: "#f1f1f1",
       ballColor:"white"
     },
   },
