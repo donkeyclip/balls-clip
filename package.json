@@ -19,7 +19,8 @@
     "lint:fix": "npm run concurrently  \"npm:lint:js -- --fix\" \"npm:lint:styles -- --fix\"",
     "start": "npm run build & webpack serve --mode=development --config ./demo/webpack.config.js",
     "test": "HERE GOES YOUR TEST TASK",
-    "test:prod": "npm run lint"
+    "test:prod": "npm run lint",
+    "render": "node node_modules/@donkeyclip/video-renderer"
   },
   "keywords": [
     "motorcortex",
@@ -41,6 +42,7 @@
     "@babel/plugin-transform-react-jsx": "7.14.9",
     "@babel/preset-env": "7.15.8",
     "@donkeyclip/motorcortex-player": "2.6.1",
+    "@donkeyclip/video-renderer": "1.4.2",
     "babel-eslint": "10.1.0",
     "babel-loader": "8.2.2",
     "concurrently": "6.3.0",
