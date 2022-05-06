@@ -1,5 +1,7 @@
 import { HTMLClip, loadPlugin } from "@donkeyclip/motorcortex";
 import ThreeDefinition from "@donkeyclip/motorcortex-threejs";
+import initParams from "./initParams";
+import initParamsValidationRules from "./initParamsValidationRules";
 const threejs = loadPlugin(ThreeDefinition);
 
 export const clip = new HTMLClip({
@@ -16,6 +18,8 @@ export const clip = new HTMLClip({
   }
   `,
   host: document.getElementById("clip"),
+  initParamsValidationRules,
+  initParams:initParams[0].value,
   containerParams: {
     width: "1920px",
     height: "1080px",
