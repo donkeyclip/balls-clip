@@ -32,7 +32,7 @@
     }
   },
   "dependencies": {
-    "@donkeyclip/motorcortex": "8.0.4",
+    "@donkeyclip/motorcortex": "^9.5.0",
     "@donkeyclip/motorcortex-threejs": "^3.0.0",
     "babel-polyfill": "6.26.0"
   },
@@ -41,8 +41,7 @@
     "@babel/plugin-syntax-jsx": "7.14.5",
     "@babel/plugin-transform-react-jsx": "7.14.9",
     "@babel/preset-env": "7.15.8",
-    "@donkeyclip/motorcortex-player": "2.6.1",
-    "@donkeyclip/video-renderer": "1.4.2",
+    "@donkeyclip/motorcortex-player": "2.10.7",
     "babel-eslint": "10.1.0",
     "babel-loader": "8.2.2",
     "concurrently": "6.3.0",
@@ -66,9 +65,8 @@
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-recommended": "5.0.0",
     "stylelint-config-standard": "22.0.0",
-    "webpack": "5.58.2",
-    "webpack-cli": "4.9.0",
-    "webpack-dev-server": "3.11.2",
-    "whatwg-fetch": "3.6.2"
+    "webpack": "^5.59.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
   }
 }
